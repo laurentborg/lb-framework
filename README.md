@@ -21,4 +21,4 @@ It's a list of class to set some basics CSS rules, like margins, alignements, sh
 | Responsive display | ```.lb``` | ```.mobile``` ```.tablet``` ```.computer``` / ```.only``` ```.hide``` |
 | Rounded | ```.lb.rounded```| ```.full-rounded```|
 | Shadow | ```.lb.shadow```| - |
-| Text shadow | ```.lb.text.shadow```| - |
+| Text shadow | ```.lb.text-shadow```| - |
