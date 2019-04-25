@@ -26,6 +26,7 @@ List :
 | Font size | ```.lb.font```| ```.mini``` ```.tiny``` ```.small``` ```.medium``` ```.large``` ```.big``` ```.huge``` ```.massive``` |
 | Full width | ```.lb.full``` | - |
 | Header | ```.lb.header```| ```.mini``` ```.tiny``` ```.small``` ```.medium``` ```.large``` ```.big``` ```.huge``` ```.massive``` |
+| Hovering shadow | ```.lb.hovering``` | - |
 | Margin | ```.lb.margin```| ```.one``` to ```.nine``` / ```.top``` ```.right``` ```.bottom``` ```.left``` / ```.no-margin``` |
 | Padding | ```.lb.padding```| ```.one``` to ```.nine``` / ```.top```, ```.right```, ```.bottom```, ```.left``` / ```.no-padding```|
 | Responsive display | ```.lb``` | ```.mobile``` ```.tablet``` ```.computer``` / ```.only``` ```.hide``` |
