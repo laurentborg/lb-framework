@@ -51,9 +51,5 @@ List :
 
 | element | requierement | settings |
 |---------|--------------|----------|
-| Grid | ```.lb.grid``` > ```.grid-item``` | ```.column-1``` to ```.column-12``` / ```.square``` ```.no-gutter```
-
-&nbsp;
-
-```.width-1```to ```.width-2``` / ```.row-1``` to ```.row-12``` |
+| Grid | ```.lb.grid``` > ```.grid-item``` | ```.column-1``` to ```.column-12``` / ```.square``` ```.no-gutter``` || ```.width-1```to ```.width-2``` / ```.row-1``` to ```.row-12``` |
 | Navebar | ```.lb.navebar``` > ```.item```| ```.dropdown``` |
