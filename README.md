@@ -31,6 +31,7 @@ List :
 | Responsive display | ```.lb``` | ```.mobile``` ```.tablet``` ```.computer``` / ```.only``` ```.hide``` |
 | Rounded | ```.lb.rounded```| ```.full-rounded```|
 | Shadow | ```.lb.shadow```| - |
+| Sticky | ```.lb.sticky``` | ```[data-sticky-offset]``` |
 | Text shadow | ```.lb.text-shadow```| - |
 
 
