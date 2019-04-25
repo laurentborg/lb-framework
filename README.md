@@ -54,5 +54,5 @@ List :
 | element | requierement | settings |
 |---------|--------------|----------|
 | Grid | ```.lb.grid``` > ```.grid-item``` | ```.column-1``` to ```.column-12``` / ```.square``` ```.no-gutter``` > ```.width-1```to ```.width-2``` / ```.row-1``` to ```.row-12``` |
-| Navebar | ```.lb.navebar``` > ```.item```| ```.dropdown``` |
+| Navebar | ```.lb.navebar``` > ```.item```|  - > ```.dropdown``` |
 | Scrollspy | ```.lb.scrollspy``` > ```a[href^=#]``` | ```[data-scrollspy-offset]``` |
