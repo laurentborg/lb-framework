@@ -32,3 +32,17 @@ List :
 | Rounded | ```.lb.rounded```| ```.full-rounded```|
 | Shadow | ```.lb.shadow```| - |
 | Text shadow | ```.lb.text-shadow```| - |
+
+
+2. Components classes (two or more HTML levels)
+
+It's a list of classes that need a minimum requierment to work.
+
+Exemple :
+
+```
+<div class="lb menu">
+  <div class="item">item 1</div>
+  <div class="item">item 2</div>
+</div>
+```
