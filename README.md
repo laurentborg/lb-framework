@@ -25,15 +25,16 @@ List :
 | Button | ```.lb.button``` | - |
 | Font size | ```.lb.font```| ```.mini``` ```.tiny``` ```.small``` ```.medium``` ```.large``` ```.big``` ```.huge``` ```.massive``` |
 | Full width | ```.lb.full``` | - |
-| Header | ```.lb.header```| ```.mini``` ```.tiny``` ```.small``` ```.medium``` ```.large``` ```.big``` ```.huge``` ```.massive``` |
+| Header | ```.lb.header``` | ```.mini``` ```.tiny``` ```.small``` ```.medium``` ```.large``` ```.big``` ```.huge``` ```.massive``` |
 | Hovering shadow | ```.lb.hovering``` | - |
 | Margin | ```.lb.margin```| ```.one``` to ```.nine``` / ```.top``` ```.right``` ```.bottom``` ```.left``` / ```.no-margin``` |
-| Padding | ```.lb.padding```| ```.one``` to ```.nine``` / ```.top```, ```.right```, ```.bottom```, ```.left``` / ```.no-padding```|
-| Parallax | ```.lb.parallax``` | ```[data-parallax]``` |
+| Padding | ```.lb.padding```| ```.one``` to ```.nine``` / ```.top```, ```.right```, ```.bottom```, ```.left``` / ```.no-padding``` |
+| Parallax | ```.lb.parallax``` | ```[data-parallax="x"]``` |
+| Ratio | ```.lb.ratio``` | ```.square``` ```.wide``` / ```[data-ratio="x x"]``` |
 | Responsive display | ```.lb``` | ```.mobile``` ```.tablet``` ```.computer``` / ```.only``` ```.hide``` |
 | Rounded | ```.lb.rounded```| ```.full-rounded```|
 | Shadow | ```.lb.shadow```| - |
-| Sticky | ```.lb.sticky``` | ```[data-sticky-offset]``` |
+| Sticky | ```.lb.sticky``` | ```[data-sticky-offset="x"]``` |
 | Text shadow | ```.lb.text-shadow```| - |
 
 
@@ -56,5 +57,4 @@ List :
 |---------|--------------|--------------------|---|--------------------|
 | Grid | ```.lb.grid``` > ```.grid-item``` | ```.column-1``` to ```.column-12``` / ```.square``` ```.no-gutter``` | > | ```.width-1```to ```.width-2``` / ```.row-1``` to ```.row-12``` | 
 | Navebar | ```.lb.navebar``` > ```.item```|  - | > | ```.dropdown``` |
-| Ratio | - | - | > | - |
-| Scrollspy | ```.lb.scrollspy``` > ```a[href^=#]``` | ```[data-scrollspy-offset]``` | > | - |
+| Scrollspy | ```.lb.scrollspy``` > ```a[href^=#]``` | ```[data-scrollspy-offset="x"]``` | > | - |
