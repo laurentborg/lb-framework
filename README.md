@@ -29,6 +29,7 @@ List :
 | Hovering shadow | ```.lb.hovering``` | - |
 | Margin | ```.lb.margin```| ```.one``` to ```.nine``` / ```.top``` ```.right``` ```.bottom``` ```.left``` / ```.no-margin``` |
 | Padding | ```.lb.padding```| ```.one``` to ```.nine``` / ```.top```, ```.right```, ```.bottom```, ```.left``` / ```.no-padding```|
+| Parallax | ```.lb.parallax``` | ```[data-parallax]``` |
 | Responsive display | ```.lb``` | ```.mobile``` ```.tablet``` ```.computer``` / ```.only``` ```.hide``` |
 | Rounded | ```.lb.rounded```| ```.full-rounded```|
 | Shadow | ```.lb.shadow```| - |
@@ -55,4 +56,5 @@ List :
 |---------|--------------|--------------------|---|--------------------|
 | Grid | ```.lb.grid``` > ```.grid-item``` | ```.column-1``` to ```.column-12``` / ```.square``` ```.no-gutter``` | > | ```.width-1```to ```.width-2``` / ```.row-1``` to ```.row-12``` | 
 | Navebar | ```.lb.navebar``` > ```.item```|  - | > | ```.dropdown``` |
+| Ratio | - | - | > | - |
 | Scrollspy | ```.lb.scrollspy``` > ```a[href^=#]``` | ```[data-scrollspy-offset]``` | > | - |
