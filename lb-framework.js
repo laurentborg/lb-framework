@@ -175,3 +175,48 @@ $.fn.fluidbox = function(){
     }); 
  
 }
+
+//ln colors
+
+$.fn.ln_colors = function(options){
+	var $selector = this;
+	var settings = $.extend({}, options );
+	var ln_colors = [];
+
+	for ( var item in settings) {
+		var value = settings[item];
+		var the_ligne = { name : item, color : value};
+		ln_colors.push(the_ligne);
+	}
+
+	var $ln_colors_style = '<style class="ln_colors_styles"></style>';
+
+	$($selector).append($ln_colors_style);
+
+	var i;
+	var c_bg, c_border, c_text;
+	for (i = 0; i < ln_colors.length; i++) {
+		c_bg = '.'+ln_colors[i].name+'{background:'+ln_colors[i].color+' !important;}';
+		$($selector).find('.ln_colors_styles').append(c_bg);
+	}
+	for (i = 0; i < ln_colors.length; i++) {
+		c_border = '.border-'+ln_colors[i].name+'{border: 1px solid '+ln_colors[i].color+' !important;}';
+		c_text = '.text-'+ln_colors[i].name+'{color:'+ln_colors[i].color+' !important;}';
+		$($selector).find('.ln_colors_styles').append(c_border,c_text);
+	}
+	
+	var c_hover, c_border_hover, c_text_hover;
+	for(i = 0; i < ln_colors.length; i++) {
+		c_hover = '.hover-'+ln_colors[i].name+':hover {background:'+ln_colors[i].color+' !important;}';
+		c_border_hover = '.border-hover-'+ln_colors[i].name+':hover {border-color:'+ln_colors[i].color+' !important;}';
+		c_text_hover = '.text-hover-'+ln_colors[i].name+':hover {color:'+ln_colors[i].color+' !important;}';
+		$($selector).find('.ln_colors_styles').append(c_hover, c_border_hover, c_text_hover);
+	}
+
+	var c_variable = '';
+	for (i = 0; i < ln_colors.length; i++) {
+		c_variable += '--'+ln_colors[i].name+':'+ln_colors[i].color+';';
+	}
+	$($selector).find('.ln_colors_styles').append(':root{'+c_variable+'}');
+
+}
