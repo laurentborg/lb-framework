@@ -77,3 +77,9 @@ $('head').ln_colors({
 
 <div class="text-dark">This element have his text in dark</div>
 ```
+
+Behaviors :
+
+| option | generated class | generated variable |
+|--------|-----------------|--------------------|
+|```name:'value'```| ```.name``` |  ```var(--name)``` |
