@@ -80,6 +80,6 @@ $('head').ln_colors({
 
 Behaviors :
 
-| option | generated class | generated variable |
+| option | generated classes | generated css variable |
 |--------|-----------------|--------------------|
 |```name:'value'```| ```.name``` ```.hover-name``` ```.text-name``` ```.text-hover-name``` ```.border-name``` ```.border-hover-name``` |  ```var(--name)``` |
