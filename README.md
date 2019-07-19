@@ -82,4 +82,4 @@ Behaviors :
 
 | option | generated class | generated variable |
 |--------|-----------------|--------------------|
-|```name:'value'```| ```.name``` |  ```var(--name)``` |
+|```name:'value'```| ```.name``` ```.hover-name``` ```.text-name``` ```.text-hover-name``` ```.border-name``` ```.border-hover-name``` |  ```var(--name)``` |
