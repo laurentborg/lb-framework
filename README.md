@@ -4,7 +4,7 @@ lb framework is a free CSS framework compatible with Wordpress.
 
 ## How it work :
 
-1. Elements classes names (one HTML level)
+### 1. Elements classes names (one HTML level)
 
 
 
@@ -38,7 +38,7 @@ List :
 | Text shadow | ```.lb.text-shadow```| - |
 
 
-2. Components classes (two or more HTML levels)
+### 2. Components classes (two or more HTML levels)
 
 It's a list of classes that need a minimum requierment to work.
 
@@ -58,3 +58,22 @@ List :
 | Grid | ```.lb.grid``` > ```.grid-item``` | ```.column-1``` to ```.column-12``` / ```.square``` ```.no-gutter``` | > | ```.width-1``` to ```.width-12``` / ```.row-1``` to ```.row-12``` | 
 | Navebar | ```.lb.navebar``` > ```.item```|  - | > | ```.dropdown``` |
 | Scrollspy | ```.lb.scrollspy``` > ```a[href^=#]``` | ```[data-scrollspy-offset="x"]``` | > | - |
+
+
+### 3. The ln_colors function
+
+It's Jquery function prototype to manage colors.
+
+Exemple :
+
+```
+<script>
+$('head').ln_colors({
+  dark:'#333',
+};
+</script>
+
+<div class="dark">This element have a background dark</div>
+
+<div class="text-dark">This element have his text in dark</div>
+```
