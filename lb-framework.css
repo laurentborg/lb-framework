@@ -343,6 +343,11 @@ button.lb[class*=" hover"]:hover, input[type="button"].lb[class*=" hover"]:hover
   margin-left: auto !important;
 }
 
+
+.lb.left, .lb .left {
+  margin-right: auto !important;
+}
+
 /*========================= Rounded =========================*/
 .lb.rounded {
   border-radius: 5px;
