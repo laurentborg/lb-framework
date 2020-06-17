@@ -70,7 +70,7 @@ Exemple :
 <script>
 $('head').ln_colors({
   dark:'#333',
-};
+});
 </script>
 
 <div class="dark">This element have a background dark</div>
@@ -83,3 +83,18 @@ Behaviors :
 | option | generated classes | generated css variable |
 |--------|-----------------|--------------------|
 |```name:'value'```| ```.name``` ```.hover-name``` ```.text-name``` ```.text-hover-name``` ```.border-name``` ```.border-hover-name``` |  ```var(--name)``` |
+
+
+### 4. The breakLine function
+
+It is a prototype of Jquery function to break lines by replacing any character in html forced return ```<br/>``` .
+
+Exemple :
+
+```
+<script>
+$('.line').breakLine('$');
+</script>
+
+<span class="line">This sentence will cut after $ and continue below.</span>
+```
