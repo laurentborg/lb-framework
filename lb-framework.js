@@ -220,3 +220,26 @@ $.fn.ln_colors = function(options){
 	$($selector).find('.ln_colors_styles').append(':root{'+c_variable+'}');
 
 }
+
+//breaklines
+
+$.fn.breakLine = function(options){
+	var $el = this;
+	var char;
+			
+	if ( !options ){
+		char = "|";
+	} else {
+		char = options;
+	}
+	
+	$el.each(function(){
+		breakLine($(this));
+	});
+
+	function breakLine(elem) {
+		var str = elem.html();
+		var res = str.split(char).join("<br/>");
+		elem.html(res);
+	}
+}
