@@ -60,7 +60,9 @@ List :
 | Scrollspy | ```.lb.scrollspy``` > ```a[href^=#]``` | ```[data-scrollspy-offset="x"]``` | > | - |
 
 
-### 3. The ln_colors function
+### 3. The functions
+
+#### The ln_colors function
 
 It's Jquery function prototype to manage colors.
 
@@ -85,7 +87,7 @@ Behaviors :
 |```name:'value'```| ```.name``` ```.hover-name``` ```.text-name``` ```.text-hover-name``` ```.border-name``` ```.border-hover-name``` |  ```var(--name)``` |
 
 
-### 4. The breakLine function
+#### The breakLine function 
 
 It is a prototype of Jquery function to break lines by replacing any character in html forced return ```<br/>``` .
 
@@ -97,4 +99,15 @@ $('.line').breakLine('$');
 </script>
 
 <span class="line">This sentence will cut after $ and continue below.</span>
+```
+
+### 4. Instalation
+
+Copy paste this links in the head of your html page : 
+
+```
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jquery/jquery@3.2.1/dist/jquery.min.js">
+
+<script src="https://cdn.jsdelivr.net/gh/laurentborg/lb-framework@1.0.1/lb-framework.css"></script>
+<script src="https://cdn.jsdelivr.net/gh/laurentborg/lb-framework@1.0.5/lb-framework.js"></script>
 ```
