@@ -22,7 +22,7 @@ List :
 |---------|------|----------|
 | Alignement self | ```.lb```| ```.left``` ```.center``` ```.right``` |
 | Alignement content | ```.lb```| ```.align-center``` ```.middle``` |
-| Button | ```.lb.button``` | - |
+| Button | ```.lb.button``` | ```.disabled``` |
 | Font size | ```.lb.font```| ```.mini``` ```.tiny``` ```.small``` ```.medium``` ```.large``` ```.big``` ```.huge``` ```.massive``` |
 | Full width | ```.lb.full``` | - |
 | Header | ```.lb.header``` | ```.mini``` ```.tiny``` ```.small``` ```.medium``` ```.large``` ```.big``` ```.huge``` ```.massive``` |
