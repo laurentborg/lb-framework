@@ -628,7 +628,7 @@ a:any-link {
 }
 
 .current-color {
-	background-color: rgb(var(--r), var(--g), var(--b)) ;
+	background-color: rgb(var(--r), var(--g), var(--b)) !important;
 }
 
 .current-color.lighten, .current-color.hover-lighten:hover  {
