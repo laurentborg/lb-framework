@@ -640,6 +640,12 @@ a:any-link {
 }
 
 .gradient {
+	--lighten-r: calc(var(--r) + ((255 - var(--r))*var(--factor-l)));
+	--lighten-g: calc(var(--g) + ((255 - var(--g))*var(--factor-l)));
+	--lighten-b: calc(var(--b) + ((255 - var(--b))*var(--factor-l)));
+	--darken-r: calc(var(--r) - (var(--r)*var(--factor-d)));
+	--darken-g: calc(var(--g) - (var(--g)*var(--factor-d)));
+	--darken-b: calc(var(--b) - (var(--b)*var(--factor-d)));
 	--shade-1: rgb(var(--lighten-r), var(--lighten-g), var(--lighten-b));
 	--shade-2: rgb(var(--darken-r), var(--darken-g), var(--darken-b));
 	background-image: linear-gradient(to left, var(--shade-1), var(--shade-2)) !important;
