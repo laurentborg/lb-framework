@@ -108,6 +108,6 @@ Copy paste this links in the head of your html page :
 ```
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jquery/jquery@3.2.1/dist/jquery.min.js">
 
-<script src="https://cdn.jsdelivr.net/gh/laurentborg/lb-framework@1.0.1/lb-framework.css"></script>
+<link rel="stylesheet" src="https://cdn.jsdelivr.net/gh/laurentborg/lb-framework@1.0.5/lb-framework.css" />
 <script src="https://cdn.jsdelivr.net/gh/laurentborg/lb-framework@1.0.5/lb-framework.js"></script>
 ```
