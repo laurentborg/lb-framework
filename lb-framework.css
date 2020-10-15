@@ -437,7 +437,7 @@ a:any-link {
 }
 
 .light {
-  background: #fff !important;
+  background: var(--light) !important;
   color: #808080 !important;
 }
 
