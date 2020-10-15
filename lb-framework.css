@@ -588,63 +588,79 @@ a:any-link {
 
 /* New current-color options : */
 :root {
-  --hue: 134.11765deg;
-  --saturation: 69.86301%;
-  --lightness: 42.94118%;
+	--r: 100;
+	--g: 213;
+	--b: 25;
+	--factor-l: 0.5;
+	--factor-d: 0.25;
+	--shade-1: white;
+	--shade-2: black;
+}
+
+.more {
+	--factor-l: 0.75;
+	--factor-d: 0.5;
+}
+
+.lighten, .hover-lighten  {
+	--lighten-r: calc(var(--r) + ((255 - var(--r))*var(--factor-l)));
+	--lighten-g: calc(var(--g) + ((255 - var(--g))*var(--factor-l)));
+	--lighten-b: calc(var(--b) + ((255 - var(--b))*var(--factor-l)));
+
+}
+
+.darken, .hover-darken {
+	--darken-r: calc(var(--r) - (var(--r)*var(--factor-d)));
+	--darken-g: calc(var(--g) - (var(--g)*var(--factor-d)));
+	--darken-b: calc(var(--b) - (var(--b)*var(--factor-d)));
 }
 
 .text-current-color {
-  color: hsl(var(--hue), var(--saturation), var(--lightness)) !important;
+	color: rgb(var(--r), var(--g), var(--b)) !important;
 }
 
-.text-current-color.lighten {
-  --lighten: calc(var(--lightness) + 10%);
-  color: hsl(var(--hue), var(--saturation), var(--lighten)) !important;
+.text-current-color.lighten, .text-current-color.hover-lighten:hover {
+	color: rgb(var(--lighten-r), var(--lighten-g), var(--lighten-b)) !important;
 }
 
-.text-current-color.darken {
-  --darken: calc(var(--lightness) - 10%);
-  color: hsl(var(--hue), var(--saturation), var(--darken)) !important;
+.text-current-color.darken, .text-current-color.hover-darken:hover {
+	color: rgb(var(--darken-r), var(--darken-g), var(--darken-b)) !important;
 }
 
 .current-color {
-  background-color: hsl(var(--hue), var(--saturation), var(--lightness)) !important;
+	background-color: rgb(var(--r), var(--g), var(--b)) !important;
 }
 
-.current-color.lighten {
-  --lighten: calc(var(--lightness) + 10%);
-  background-color: hsl(var(--hue), var(--saturation), var(--lighten)) !important;
+.current-color.lighten, .current-color.hover-lighten:hover  {
+	background-color: rgb(var(--lighten-r), var(--lighten-g), var(--lighten-b)) !important;
 }
 
-.current-color.darken {
-  --darken: calc(var(--lightness) - 10%);
-  background-color: hsl(var(--hue), var(--saturation), var(--darken)) !important;
+.current-color.darken,  .current-color.hover-darken:hover  {
+	background-color: rgb(var(--darken-r), var(--darken-g), var(--darken-b)) !important;
 }
 
-.current-color.gradient {
-  --shade-1: hsl(var(--hue),var(--saturation), calc(var(--lightness) + 10%));
-  --shade-2: hsl(var(--hue),var(--saturation), calc(var(--lightness) - 10%));
-  background: linear-gradient(var(--shade-1), var(--shade-2)) !important;
+.gradient {
+	--lighten-r: calc(var(--r) + ((255 - var(--r))*var(--factor-l)));
+	--lighten-g: calc(var(--g) + ((255 - var(--g))*var(--factor-l)));
+	--lighten-b: calc(var(--b) + ((255 - var(--b))*var(--factor-l)));
+	--darken-r: calc(var(--r) - (var(--r)*var(--factor-d)));
+	--darken-g: calc(var(--g) - (var(--g)*var(--factor-d)));
+	--darken-b: calc(var(--b) - (var(--b)*var(--factor-d)));
+	--shade-1: rgb(var(--lighten-r), var(--lighten-g), var(--lighten-b));
+	--shade-2: rgb(var(--darken-r), var(--darken-g), var(--darken-b));
+	background-image: linear-gradient(to left, var(--shade-1), var(--shade-2)) !important;
 }
 
-.current-color.gradient.invert {
-  background: linear-gradient(var(--shade-2), var(--shade-1)) !important;
+.gradient.invert {
+	background-image: linear-gradient(to right, var(--shade-1), var(--shade-2)) !important;
 }
 
-.current-color.gradient.radial {
-  background: radial-gradient(var(--shade-1), var(--shade-2)) !important;
+.gradient.radial {
+	background-image: radial-gradient(var(--shade-1), var(--shade-2)) !important;
 }
 
-.current-color.gradient.radial.invert {
-  background: radial-gradient(var(--shade-2), var(--shade-1)) !important;
-}
-
-.current-color.gradient.to-left {
-  background: linear-gradient(to left, var(--shade-1), var(--shade-2)) !important;
-}
-
-.current-color.gradient.to-left.invert {
-  background: linear-gradient(to left, var(--shade-2), var(--shade-1)) !important;
+.gradient.radial.invert {
+	background-image: radial-gradient(var(--shade-2), var(--shade-1)) !important;
 }
 
 /*========================= Menu =========================*/
