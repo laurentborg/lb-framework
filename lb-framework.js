@@ -196,7 +196,7 @@ $.fn.ln_colors = function(options){
 	var i;
 	var c_bg, c_border, c_text;
 	for (i = 0; i < ln_colors.length; i++) {
-		c_bg = '.'+ln_colors[i].name+'{background:'+ln_colors[i].color+' !important;}';
+		c_bg = '.'+ln_colors[i].name+'{background-color:'+ln_colors[i].color+' !important;}';
 		$($selector).find('.ln_colors_styles').append(c_bg);
 	}
 	for (i = 0; i < ln_colors.length; i++) {
@@ -207,7 +207,7 @@ $.fn.ln_colors = function(options){
 	
 	var c_hover, c_border_hover, c_text_hover;
 	for(i = 0; i < ln_colors.length; i++) {
-		c_hover = '.hover-'+ln_colors[i].name+':hover {background:'+ln_colors[i].color+' !important;}';
+		c_hover = '.hover-'+ln_colors[i].name+':hover {background-color:'+ln_colors[i].color+' !important;}';
 		c_border_hover = '.border-hover-'+ln_colors[i].name+':hover {border-color:'+ln_colors[i].color+' !important;}';
 		c_text_hover = '.text-hover-'+ln_colors[i].name+':hover {color:'+ln_colors[i].color+' !important;}';
 		$($selector).find('.ln_colors_styles').append(c_hover, c_border_hover, c_text_hover);
